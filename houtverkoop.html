@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html> -->
+<!-- <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+            background-image: url("https://res.cloudinary.com/dnwbod3if/image/upload/v1732545301/336751445_1011399859844227_3444166419015698067_n_reocf8.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #4CAF50;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style> -->
+<!-- </head> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rico Treuen Klussen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header--content">
+            <h1 onclick="window.location.href='index.html'" style="cursor: pointer;">Rico Treuen Klussen</h1>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Rico Treuen Klussen">
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="aanbod.html">Aanbod</a>
+        <a href="fotos.html">Foto's</a>
+        <a class="active" href="houtverkoop.html">Houtverkoop</a>
+<!--        <a href="socialmedia.html">Social Media</a>-->
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="content">
+        <h1>Houtverkoop</h1>
+        <p>Wij verkopen voorgedroogd hout, geschikt voor diverse doeleinden, zoals; hout om te stoken of om te
+            verwerken.</p>
+        <h2>Bekijk hier ons aanbod!</h2>
+        <p><strong>Houtverkoop:</strong>€ 100,- per m3</p>
+        <p>We hebben een mooie mix van eik, berk, beuk, kers en populier.</p>
+        <p>We hebben alles gezaagd en gekloofd op een lengte van ongeveer 30 centimeter.</p>
+        <p>Het bestelde brandhout wordt op een aanhanger gestapeld, zodat we er zeker van kunnen zijn dat u de juiste
+            hoeveelheid ontvangt. Ter plaatse wordt het los gestort geleverd bij de klant.</p>
+        <h4>
+            <li>Vers gekloofd hout, bekijk de foto's hieronder!</li>
+        </h4>
+        <h2>Foto's</h2>
+        <div class="photo-gallery">
+            <div class="photo-frame"><img src="images/hout1.jpg" alt="hout1"></div>
+            <div class="photo-frame"><img src='images/hout4.jpg' alt="hout2"></div>
+            <div class="photo-frame"><img src="images/hout3.jpg" alt="hout3"></div>
+            <div class="photo-frame"><img src='images/hout10.jpg' alt="hout4"></div>
+            <div class="photo-frame"><img src='images/hout6.jpg' alt="hout5"></div>
+            <div class="photo-frame"><img src="images/hout7.jpg" alt="hout6"></div>
+            <div class="photo-frame"><img src='images/hout8.jpg' alt="hout7"></div>
+            <div class="photo-frame"><img src="images/hout9.jpg" alt="hout8"></div>
+            <div class="photo-frame"><img src="images/hout5.jpg" alt="hout9"></div>
+        </div>
+        <div style="display: inline-block;">
+            <button class="button" onclick="window.location.href='contact.html'">Contact opnemen voor een vrijblijvende
+                offerte</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="images/logo.png" alt="Rico Treuen Klussen">
+        </div>
+        <div class="left">
+            <p><i class="fas fa-copyright"></i> 2024 Rico Treuen Klussen</p>
+            <p><i class="fas fa-phone"></i> 06-12345678</p>
+            <a href="mailto:info@rtklussen.nl"><i class="fas fa-envelope"></i> info@rtklussen.nl</a>
+        </div>
+        <div class="right">
+            <a href="https://www.facebook.com/ricotreuenklussen/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://www.linkedin.com/company/100397308/admin/feed/posts/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
