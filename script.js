@@ -21,11 +21,15 @@ if (window.innerWidth >= 768) {
         photoFrame.addEventListener("click", function () {
             console.log("clicked on photo");
             if (photoFrame.classList.contains("full-width")) {
+                photoFrame.style.width = "50px";
+                photoFrame.style.height = "50px";
                 photoFrame.classList.remove("full-width");
             } else {
+                photoFrame.style.width = "100%";
+                photoFrame.style.height = "100%";
                 photoFrame.classList.add("full-width");
             }
-        })
+        });
     });
 }
 
