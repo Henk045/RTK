@@ -16,16 +16,22 @@ window.addEventListener("scroll", function () {
 });
 
 
+const toggleFullScreen = (photoFrame) => {
+    const isFullScreen = photoFrame.classList.toggle("full-width");
+    document.body.style.overflow = isFullScreen ? "hidden" : "";
+    document.body.style.position = isFullScreen ? "fixed" : "";
+    document.body.style.width = isFullScreen ? "100%" : "";
+    document.querySelector(".header").style.zIndex = isFullScreen ? "1" : "";
+    document.querySelector(".topnav").style.zIndex = isFullScreen ? "1" : "";
+    window.scrollTo({
+        top: photoFrame.getBoundingClientRect().top + window.pageYOffset - document.querySelector(".header").offsetHeight
+    });
+};
+
 if (window.innerWidth >= 768) {
-    document.querySelectorAll(".photo-frame").forEach(function (photoFrame) {
-        photoFrame.addEventListener("click", function () {
-            console.log("clicked on photo");
-            if (photoFrame.classList.contains("full-width")) {
-                photoFrame.classList.remove("full-width");
-            } else {
-                photoFrame.classList.add("full-width");
-            }
-        });
+    document.querySelectorAll(".photo-frame").forEach(photoFrame => {
+        photoFrame.addEventListener("click", () => toggleFullScreen(photoFrame));
     });
 }
 
+    
