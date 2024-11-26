@@ -145,7 +145,8 @@ body {
     color: white;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
     user-select: none;
 }
