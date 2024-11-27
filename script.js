@@ -34,8 +34,4 @@ if (window.innerWidth >= 768) {
     });
 }
 
-if (window.innerWidth < 768) {
-    document.querySelectorAll(".photo-frame").forEach(photoFrame => {
-        photoFrame.addEventListener("click", () => toggleFullScreen(photoFrame));
-    });
-}
+    
