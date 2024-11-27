@@ -34,4 +34,27 @@ if (window.innerWidth >= 768) {
     });
 }
 
-    
+const toggleFullScreenPhone = (photoFrame) => {
+    const isFullScreen = photoFrame.classList.toggle("full-width");
+    if (isFullScreen) {
+        document.body.style.overflow = "hidden";
+        document.body.style.position = "fixed";
+        document.body.style.width = "100%";
+        document.querySelector(".header").style.zIndex = "1";
+        document.querySelector(".topnav").style.zIndex = "1";
+        photoFrame.querySelector("img").style.transform = "scale(2.0)";
+    } else {
+        document.body.style.overflow = "";
+        document.body.style.position = "";
+        document.body.style.width = "";
+        document.querySelector(".header").style.zIndex = "";
+        document.querySelector(".topnav").style.zIndex = "";
+        photoFrame.querySelector("img").style.transform = "";
+    }
+};
+
+if (window.innerWidth < 768) {
+    document.querySelectorAll(".photo-frame").forEach(photoFrame => {
+        photoFrame.addEventListener("click", () => toggleFullScreenPhone(photoFrame));
+    });
+}
